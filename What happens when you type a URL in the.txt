@@ -1,0 +1,4 @@
+What happens when you type a URL in the address bar in the browser?
+
+You enter a URL into a web browser. The browser looks up the IP address for the domain name via DNS.
+ The browser sends a HTTP request to the server. The server sends back a HTTP response.
