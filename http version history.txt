@@ -1,0 +1,26 @@
+http version history
+
+HTTP/0.9 — The one-line protocol
+there were no HTTP headers,only HTML files could be transmitted
+
+HTTP/1.0 — Building extensibility
+HTTP headers has been introduced, both for the requests and the responses, allowing metadata to be transmitted and making the
+protocol extremely flexible and extensible.
+With the help of the new HTTP headers, the ability to transmit other documents than plain HTML files has been added
+ (thanks to the Content-Type header).
+
+HTTP/1.1 — The standardized protocol
+A connection can be reused, saving the time to reopen it numerous times to display the resources embedded into the 
+single original document retrieved.
+Pipelining has been added, allowing to send a second request before the answer for the first one is fully transmitted,
+lowering the latency of the communication.
+Chunked responses are now also supported.
+Additional cache control mechanisms have been introduced.
+Content negotiation, including language, encoding, or type, has been introduced, and allows a client and a server to agree
+on the most adequate content to exchange.
+Thanks to the Host header, the ability to host different domains at the same IP address now allows server colocation.
+
+HTTP/2 — A protocol for greater performance
+Over the years, Web pages have become much more complex, even becoming applications in their own right. The amount of
+visual media displayed, the volume and size of scripts adding interactivity, has also increased: much more data is
+transmitted over significantly more HTTP requests.
